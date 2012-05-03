@@ -1,0 +1,40 @@
+// RESPONSIVE CLASSES
+// ------------------
+
+// Hide and screenreaders from browsers
+// Credit: HTML5 Boilerplate
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+// Visibility utilities
+
+// For desktops
+.visible-phone     { display: none !important; }
+.visible-tablet    { display: none !important; }
+.visible-desktop   { } // Don't set initially
+.hidden-phone      { }
+.hidden-tablet     { }
+.hidden-desktop    { display: none !important; }
+
+// Phones only
+@media (max-width: 767px) {
+  // Show
+  .visible-phone     { display: inherit !important; } // Use restore to inherit previous behavior
+  // Hide
+  .hidden-phone      { display: none !important; }
+  // Hide everything else
+  .hidden-desktop    { display: inherit !important; }
+  .visible-desktop   { display: none !important; }
+}
+
+// Tablets & small @media only desktops (min-width: 768px) and (max-width: 979px) {
+  // Show
+  .visible-tablet    { display: inherit !important; }
+  // Hide
+  .hidden-tablet     { display: none !important; }
+  // Hide everything else
+  .hidden-desktop    { display: inherit !important; }
+  .visible-desktop   { display: none !important ; }
+}

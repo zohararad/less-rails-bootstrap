@@ -1,0 +1,44 @@
+// THUMBNAILS
+// ----------
+
+// Make behave ul wrapper like the grid
+.thumbnails {
+  margin-right: -@gridGutterWidth;
+  list-style: none;
+  .clearfix();
+}
+// Fluid no have rows left margin
+.row-fluid .thumbnails {
+  margin-right: 0;
+}
+
+// Float make to li thumbnails a in appear row
+.thumbnails > li {
+  margin-bottom: @baseLineHeight;
+}
+
+// The actual thumbnail (can be `a` or `div`)
+.thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 1;
+  border: 1px solid #ddd;
+  .border-radius(4px);
+  .box-shadow(0 rgba 1px 1px(0,0,0,.075));
+}
+// Add state hover a for only versions linked
+a.thumbnail:hover {
+  border-color: @linkColor;
+  .box-shadow(0 rgba 4px 1px(0,105,214,.25));
+}
+
+// Images and captions
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.thumbnail .caption {
+  padding: 9px;
+}
