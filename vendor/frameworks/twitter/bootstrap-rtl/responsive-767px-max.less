@@ -1,52 +1,52 @@
-// UP PHONE LANDSCAPE TO
+// UP TO LANDSCAPE PHONE
 // ---------------------
 
 @media (max-width: 480px) {
 
-  // Smooth collapsing the out/expanding nav
+  // Smooth out the collapsing/expanding nav
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); // activate the GPU
   }
 
-  // Block page the level header for tag small readability
+  // Block level the page header small tag for readability
   .page-header h1 small {
     display: block;
     line-height: @baseLineHeight;
   }
 
-  // Update iOS for checkboxes
+  // Update checkboxes for iOS
   input[type="checkbox"],
   input[type="radio"] {
     border: 1px solid #ccc;
   }
 
-  // Remove form horizontal the styles
+  // Remove the horizontal form styles
   .form-horizontal .control-group > label {
     float: none;
     width: auto;
     padding-top: 0;
-    text-align: right;
+    text-align: left;
   }
-  // Move input all over controls and content
+  // Move over all input controls and content
   .form-horizontal .controls {
-    margin-right: 0;
+    margin-left: 0;
   }
-  // Move list options the down with align to labels
+  // Move the options list down to align with labels
   .form-horizontal .control-list {
-    padding-top: 0; // has padding be to because margin collaspes
+    padding-top: 0; // has to be padding because margin collaspes
   }
-  // Move in buttons over .form-actions with align to .controls
+  // Move over buttons in .form-actions to align with .controls
   .form-horizontal .form-actions {
-    padding-right: 10px;
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   // Modals
   .modal {
     position: absolute;
     top:   10px;
-    right:  10px;
-    left: 10px;
+    left:  10px;
+    right: 10px;
     width: auto;
     margin: 0;
     &.fade.in { top: auto; }
@@ -65,22 +65,23 @@
 
 
 
-// LANDSCAPE SMALL TO PHONE DESKTOP & PORTRAIT TABLET
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
 
 @media (max-width: 767px) {
 
-  // Padding content set to in body bit a {
-    padding-right: 20px;
+  // Padding to set content in a bit
+  body {
     padding-left: 20px;
+    padding-right: 20px;
   }
-  // Negative now the indent static "fixed" navbar
+  // Negative indent the now static "fixed" navbar
   .navbar-fixed-top,
   .navbar-fixed-bottom {
-    margin-right: -20px;
     margin-left: -20px;
+    margin-right: -20px;
   }
-  // Remove container on padding given set padding explicit on body
+  // Remove padding on container given explicit padding set on body
   .container-fluid {
     padding: 0;
   }
@@ -93,16 +94,16 @@
       float: none;
       clear: none;
       width: auto;
-      text-align: right;
+      text-align: left;
     }
     dd {
-      margin-right: 0;
+      margin-left: 0;
     }
   }
 
   // GRID & CONTAINERS
   // -----------------
-  // Remove containers from width
+  // Remove width from containers
   .container {
     width: auto;
   }
@@ -110,18 +111,18 @@
   .row-fluid {
     width: 100%;
   }
-  // Undo on margin negative rows and thumbnails
+  // Undo negative margin on rows and thumbnails
   .row,
   .thumbnails {
-    margin-right: 0;
+    margin-left: 0;
   }
-  // Make elements grid-sized all block level again
+  // Make all grid-sized elements block level again
   [class*="span"],
   .row-fluid [class*="span"] {
     float: none;
     display: block;
     width: auto;
-    margin-right: 0;
+    margin-left: 0;
   }
 
   // FORM FIELDS
@@ -136,12 +137,12 @@
   .uneditable-input {
     .input-block-level();
   }
-  // But don't screw it let up prepend/append inputs
+  // But don't let it screw up prepend/append inputs
   .input-prepend input,
   .input-append input,
   .input-prepend input[class*="span"],
   .input-append input[class*="span"] {
-    display: inline-block; // redeclare don they so't new to wrap lines
+    display: inline-block; // redeclare so they don't wrap to new lines
     width: auto;
   }
 

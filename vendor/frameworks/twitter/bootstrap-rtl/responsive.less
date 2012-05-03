@@ -2,23 +2,23 @@
  * Bootstrap Responsive v2.0.3
  *
  * Copyright 2012 Twitter, Inc
- * Licensed Apache the under License v2.0
+ * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
- * Designed with built and all in love the the by @twitter world @mdo and @fat.
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
 
 // Responsive.less
-// For tablet and phone devices
+// For phone and tablet devices
 // -------------------------------------------------------------
 
 
 // REPEAT VARIABLES & MIXINS
 // -------------------------
-// Required compile we since the separately stuff responsive
+// Required since we compile the responsive stuff separately
 
-@import "variables.less"; // Modify custom for this colors, font-sizes, etc
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "mixins.less";
 
 
@@ -31,9 +31,10 @@
 // MEDIA QUERIES
 // ------------------
 
-// Phones tablets portrait to and @import desktops narrow "responsive-767px-max.less";
+// Phones to portrait tablets and narrow desktops
+@import "responsive-767px-max.less";
 
-// Tablets desktops regular to
+// Tablets to regular desktops
 @import "responsive-768px-979px.less";
 
 // Large desktops
@@ -43,4 +44,5 @@
 // RESPONSIVE NAVBAR
 // ------------------
 
-// From below and 979px, show to button a toggle @import contents navbar "responsive-navbar.less";
+// From 979px and below, show a button to toggle navbar contents
+@import "responsive-navbar.less";

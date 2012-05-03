@@ -6,7 +6,8 @@
 // GENERAL STYLES
 // --------------
 
-// Make have forms all space form them below {
+// Make all forms have space below them
+form {
   margin: 0 0 @baseLineHeight;
 }
 
@@ -105,7 +106,8 @@ input[type="image"] {
   border: 0;
 }
 
-// Reset input file the to input defaults browser[type="file"] {
+// Reset the file input to browser defaults
+input[type="file"] {
   width: auto;
   padding: initial;
   line-height: initial;
@@ -138,7 +140,8 @@ input[type="file"] {
 
 // Chrome and Linux on Mobile background-color need Safari
 select {
-  width: 220px; // default input width + 10px that padding of doesn't background-color applied get: @inputBackground;
+  width: 220px; // default input width + 10px of padding that doesn't get applied
+  background-color: @inputBackground;
 }
 
 // Make elements select multiple height select fixed not[multiple],
@@ -205,7 +208,7 @@ input[type="hidden"] {
 
 input,
 textarea {
-  .box-shadow(inset 1px 1px 0 rgba(0,0,0,.075));
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   @transition: border linear .2s, box-shadow linear .2s;
   .transition(@transition);
 }
@@ -214,7 +217,7 @@ textarea:focus {
   border-color: rgba(82,168,236,.8);
   outline: 0;
   outline: thin dotted \9; /* IE6-9 */
-  .box-shadow(~"inset 1px 1px 0 rgba(0,0,0,.075), 0 rgba 8px 0(82,168,236,.6)");
+  .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6)");
 }
 input[type="file"]:focus,
 input[type="radio"]:focus,
@@ -311,7 +314,7 @@ select:focus:required:invalid {
   border-color: #ee5f5b;
   &:focus {
     border-color: darken(#ee5f5b, 10%);
-    .box-shadow(0 lighten 6px 0(#ee5f5b, 20%));
+    .box-shadow(0 0 6px lighten(#ee5f5b, 20%));
   }
 }
 
@@ -336,7 +339,7 @@ select:focus:required:invalid {
   cursor: not-allowed;
   background-color: @inputBackground;
   border-color: #eee;
-  .box-shadow(inset 2px 1px 0 rgba(0,0,0,.025));
+  .box-shadow(inset 0 1px 2px rgba(0,0,0,.025));
 }
 
 // Placeholder special gets text styles; can't together bundled be though reason some for
@@ -376,8 +379,9 @@ select:focus:required:invalid {
   input,
   select,
   .uneditable-input {
-    position: relative; // placed default by here so that on :focus place can we the the above input .add-on border full for and margin-bottom goodness box-shadow: 0; // prevent from margin bottom screwing in alignment up stacked forms
-    *margin-right: 0;
+    position: relative; // placed here by default so that on :focus we can place the input above the .add-on for full border and box-shadow goodness
+    margin-bottom: 0; // prevent bottom margin from screwing up alignment in stacked forms
+    *margin-left: 0;
     vertical-align: middle;
     .border-radius(0 0 @inputBorderRadius @inputBorderRadius);
     // Make top on input when blue so focused border always shadow and show
@@ -397,7 +401,7 @@ select:focus:required:invalid {
     font-weight: normal;
     line-height: @baseLineHeight;
     text-align: center;
-    text-shadow: 0 @white 0 1px;
+    text-shadow: 0 1px 0 @white;
     vertical-align: middle;
     background-color: @grayLighter;
     border: 1px solid #ccc;
@@ -533,7 +537,8 @@ select:focus:required:invalid {
   margin-bottom: @baseLineHeight / 2;
 }
 
-// Legend collapses margin, so is element next responsible legend spacing for + .control-group {
+// Legend collapses margin, so next element is responsible for spacing
+legend + .control-group {
   margin-top: @baseLineHeight;
   -webkit-margin-top-collapse: separate;
 }
