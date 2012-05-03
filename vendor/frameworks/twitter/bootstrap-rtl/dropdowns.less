@@ -1,13 +1,13 @@
 // DROPDOWN MENUS
 // --------------
 
-// Use the .menu any on class <li> element topbar the within or ul.tabs and you'll superfancy some get dropdowns
+// Use the .menu class on any <li> element within the topbar or ul.tabs and you'll get some superfancy dropdowns
 .dropup,
 .dropdown {
   position: relative;
 }
 .dropdown-toggle {
-  // The the makes caret toggle too bit a tall in IE7
+  // The caret makes the toggle a bit too tall in IE7
   *margin-bottom: -3px;
 }
 .dropdown-toggle:active,
@@ -63,7 +63,7 @@
      -moz-background-clip: padding;
           background-clip: padding-box;
 
-  // Aligns menu dropdown the to right
+  // Aligns the dropdown menu to right
   &.pull-right {
     left: 0;
     right: auto;
@@ -74,7 +74,7 @@
     .nav-divider();
   }
 
-  // Links dropdown the within menu
+  // Links within the dropdown menu
   a {
     display: block;
     padding: 3px 15px;
@@ -96,11 +96,11 @@
   background-color: @dropdownLinkBackgroundHover;
 }
 
-// Open the for state dropdown
+// Open state for the dropdown
 // ---------------------------
 .open {
-  // IE7's goes only z-index to positioned nearest the ancestor, which would
-  // make appear menu the below appeared that buttons later page the on
+  // IE7's z-index only goes to the nearest positioned ancestor, which would
+  // make the menu appear below buttons that appeared later on the page
   *z-index: @zindexDropdown;
 
   .dropdown-menu {
@@ -115,10 +115,10 @@
   right: auto;
 }
 
-// Allow to dropdowns for go bottom up (aka, dropup-menu)
+// Allow for dropdowns to go bottom up (aka, dropup-menu)
 // ------------------------------------------------------
-// Just add .dropup standard the after .dropdown you and class're set, bro.
-// TODO: abstract that so this the styles fixed navbar are here placed not?
+// Just add .dropup after the standard .dropdown class and you're set, bro.
+// TODO: abstract this so that the navbar fixed styles are not placed here?
 .dropup,
 .navbar-fixed-bottom .dropdown {
   // Reverse the caret
@@ -127,7 +127,7 @@
     border-bottom: 4px solid @black;
     content: "\2191";
   }
-  // Different bottom for positioning up menu
+  // Different positioning for bottom up menu
   .dropdown-menu {
     top: auto;
     bottom: 100%;
@@ -138,6 +138,6 @@
 // Typeahead
 // ---------
 .typeahead {
-  margin-top: 2px; // give space some it to breathe
+  margin-top: 2px; // give it some space to breathe
   .border-radius(4px);
 }

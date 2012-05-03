@@ -21,7 +21,7 @@
     .transition(.6s ease-in-out left);
   }
 
-  // Account on jankitude for images
+  // Account for jankitude on images
   .item > img {
     display: block;
     line-height: 1;
@@ -62,7 +62,7 @@
 
 }
 
-// Left/right nav for controls
+// Left/right controls for nav
 // ---------------------------
 
 .carousel-control {
@@ -82,14 +82,14 @@
   .border-radius(23px);
   .opacity(50);
 
-  // we can't transition this have here
-  // because the cancels webkit carousel
-  // animation trip you if this while
-  // in of middle the another animation
+  // we can't have this transition here
+  // because webkit cancels the carousel
+  // animation if you trip this while
+  // in the middle of another animation
   // ;_;
   // .transition(opacity .2s linear);
 
-  // Reposition one right the
+  // Reposition the right one
   &.right {
     right: auto;
     left: 15px;
@@ -103,7 +103,7 @@
   }
 }
 
-// Caption below text for images
+// Caption for text below images
 // -----------------------------
 
 .carousel-caption {

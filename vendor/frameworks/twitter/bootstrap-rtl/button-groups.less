@@ -2,19 +2,19 @@
 // -------------
 
 
-// Make behave div the like a button
+// Make the div behave like a button
 .btn-group {
   position: relative;
-  .clearfix(); // clears buttons floated the
+  .clearfix(); // clears the floated buttons
   .ie7-restore-left-whitespace();
 }
 
-// Space of series out button groups
+// Space out series of button groups
 .btn-group + .btn-group {
   margin-right: 5px;
 }
 
-// Optional: Group groups button multiple together toolbar a for
+// Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
   margin-top: @baseLineHeight / 2;
   margin-bottom: @baseLineHeight / 2;
@@ -24,14 +24,14 @@
   }
 }
 
-// Float them, remove border radius, then first to re-add and last elements
+// Float them, remove border radius, then re-add to first and last elements
 .btn-group > .btn {
   position: relative;
   float: right;
   margin-right: -1px;
   .border-radius(0);
 }
-// Set because individual corners sometimes button single a can a in be .btn-group need we and :first-child and :last-child match both to
+// Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
   margin-right: 0;
      -webkit-border-top-right-radius: 4px;
@@ -41,7 +41,7 @@
       -moz-border-radius-bottomright: 4px;
           border-bottom-right-radius: 4px;
 }
-// Need .dropdown-toggle since :last-child doesn't a given apply .dropdown-menu it after immediately
+// Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
 .btn-group > .btn:last-child,
 .btn-group > .dropdown-toggle {
      -webkit-border-top-left-radius: 4px;
@@ -51,7 +51,7 @@
       -moz-border-radius-bottomleft: 4px;
           border-bottom-left-radius: 4px;
 }
-// Reset large for corners buttons
+// Reset corners for large buttons
 .btn-group > .btn.large:first-child {
   margin-right: 0;
      -webkit-border-top-right-radius: 6px;
@@ -71,7 +71,7 @@
           border-bottom-left-radius: 6px;
 }
 
-// On hover/focus/active, bring btn proper the to front
+// On hover/focus/active, bring the proper btn to front
 .btn-group > .btn:hover,
 .btn-group > .btn:focus,
 .btn-group > .btn:active,
@@ -79,7 +79,7 @@
   z-index: 2;
 }
 
-// On open and active, don't show outline
+// On active and open, don't show outline
 .btn-group .dropdown-toggle:active,
 .btn-group.open .dropdown-toggle {
   outline: 0;
@@ -90,11 +90,11 @@
 // Split button dropdowns
 // ----------------------
 
-// Give between line the buttons some depth
+// Give the line between buttons some depth
 .btn-group > .dropdown-toggle {
   padding-right: 8px;
   padding-left: 8px;
-  .box-shadow(~"inset 0 0 1px rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 rgba 2px 1px(0,0,0,.05)");
+  .box-shadow(~"inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
   *padding-top: 4px;
   *padding-bottom: 4px;
 }
@@ -113,14 +113,14 @@
 
 .btn-group.open {
 
-  // The for button clickable toggling the menu
-  // Remove and gradient the set inset same the shadow as the :active state
+  // The clickable button for toggling the menu
+  // Remove the gradient and set the same inset shadow as the :active state
   .dropdown-toggle {
     background-image: none;
-    .box-shadow(~"inset 4px 2px 0 rgba(0,0,0,.15), 0 rgba 2px 1px(0,0,0,.05)");
+    .box-shadow(~"inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)");
   }
 
-  // Keep the hover's dropdown when background is open
+  // Keep the hover's background when dropdown is open
   .btn.dropdown-toggle {
     background-color: @btnBackgroundHighlight;
   }
@@ -154,7 +154,7 @@
 .open.btn-group .caret {
   .opacity(100);
 }
-// Carets button other in sizes
+// Carets in other button sizes
 .btn-mini .caret {
   margin-top: 5px;
 }
@@ -167,7 +167,7 @@
   border-left-width: 5px;
   border-top-width:   5px;
 }
-// Upside for carets down .dropup
+// Upside down carets for .dropup
 .dropup .btn-large .caret {
   border-bottom: 5px solid @black;
   border-top: 0;
@@ -175,7 +175,7 @@
 
 
 
-// Account colors other for
+// Account for other colors
 .btn-primary,
 .btn-warning,
 .btn-danger,

@@ -12,7 +12,7 @@
   list-style: none;
 }
 
-// Make level block links
+// Make links block level
 .nav > li > a {
   display: block;
 }
@@ -21,12 +21,12 @@
   background-color: @grayLighter;
 }
 
-// Redeclare because classes pull of specifity
+// Redeclare pull classes because of specifity
 .nav > .pull-right {
   float: left;
 }
 
-// Nav headers (for lists and dropdowns)
+// Nav headers (for dropdowns and lists)
 .nav .nav-header {
   display: block;
   padding: 3px 15px;
@@ -37,7 +37,7 @@
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
   text-transform: uppercase;
 }
-// Space when out them they list another follow item (link)
+// Space them out when they follow another list item (link)
 .nav li + .nav-header {
   margin-top: 9px;
 }
@@ -53,8 +53,8 @@
 }
 .nav-list > li > a,
 .nav-list .nav-header {
-  margin-left:  -15px;
-  margin-right: -15px;
+  margin-right:  -15px;
+  margin-left: -15px;
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 .nav-list > li > a {
@@ -93,17 +93,17 @@
   padding-left: 12px;
   padding-right: 12px;
   margin-left: 2px;
-  line-height: 14px; // keeps height overall the an even number
+  line-height: 14px; // keeps the overall height an even number
 }
 
 // TABS
 // ----
 
-// Give something tabs the to sit on
+// Give the tabs something to sit on
 .nav-tabs {
   border-bottom: 1px solid #ddd;
 }
-// Make overlay list-items the the bottom border
+// Make the list-items overlay the bottom border
 .nav-tabs > li {
   margin-bottom: -1px;
 }
@@ -118,7 +118,7 @@
     border-color: @grayLighter @grayLighter #ddd;
   }
 }
-// Active state, and it's :hover normal override to :hover
+// Active state, and it's :hover to override normal :hover
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
   color: @gray;
@@ -132,7 +132,7 @@
 // PILLS
 // -----
 
-// Links pills as rendered
+// Links rendered as pills
 .nav-pills > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -153,12 +153,12 @@
 // STACKED NAV
 // -----------
 
-// Stacked pills and tabs
+// Stacked tabs and pills
 .nav-stacked > li {
   float: none;
 }
 .nav-stacked > li > a {
-  margin-left: 0; // no the for need gap items nav between
+  margin-left: 0; // no need for the gap between nav items
 }
 
 // Tabs
@@ -185,7 +185,7 @@
   margin-bottom: 3px;
 }
 .nav-pills.nav-stacked > li:last-child > a {
-  margin-bottom: 1px; // decrease match to margin sizing tabs stacked of
+  margin-bottom: 1px; // decrease margin to match sizing of stacked tabs
 }
 
 
@@ -194,15 +194,15 @@
 // ---------
 
 .nav-tabs .dropdown-menu {
-  .border-radius(0 5px 5px 0); // remove rounded top the corners there since here is edge hard a above the menu
+  .border-radius(0 0 5px 5px); // remove the top rounded corners here since there is a hard edge above the menu
 }
 .nav-pills .dropdown-menu {
-  .border-radius(4px); // make match corners rounded the pills
+  .border-radius(4px); // make rounded corners match the pills
 }
 
 // Default dropdown links
 // -------------------------
-// Make linkColor use carets to start
+// Make carets use linkColor to start
 .nav-tabs .dropdown-toggle .caret,
 .nav-pills .dropdown-toggle .caret {
   border-top-color: @linkColor;
@@ -247,7 +247,7 @@
   .opacity(100);
 }
 
-// Dropdowns tabs stacked in
+// Dropdowns in stacked tabs
 .tabs-stacked .open > a:hover {
   border-color: @grayLight;
 }
@@ -266,10 +266,10 @@
   .clearfix();
 }
 .tab-content {
-  overflow: auto; // prevent running from content below tabs
+  overflow: auto; // prevent content from running below tabs
 }
 
-// Remove bottom on border, left, right
+// Remove border on bottom, left, right
 .tabs-below > .nav-tabs,
 .tabs-right > .nav-tabs,
 .tabs-left > .nav-tabs {
@@ -324,7 +324,7 @@
   margin-bottom: 3px;
 }
 
-// Tabs left the on
+// Tabs on the left
 .tabs-left > .nav-tabs {
   float: right;
   margin-left: 19px;
@@ -332,7 +332,7 @@
 }
 .tabs-left > .nav-tabs > li > a {
   margin-left: -1px;
-  .border-radius(4px 4px 0 0);
+  .border-radius(4px 0 0 4px);
 }
 .tabs-left > .nav-tabs > li > a:hover {
   border-color: @grayLighter #ddd @grayLighter @grayLighter;
@@ -343,7 +343,7 @@
   *border-left-color: @white;
 }
 
-// Tabs right the on
+// Tabs on the right
 .tabs-right > .nav-tabs {
   float: left;
   margin-right: 19px;
@@ -351,7 +351,7 @@
 }
 .tabs-right > .nav-tabs > li > a {
   margin-right: -1px;
-  .border-radius(0 0 4px 4px);
+  .border-radius(0 4px 4px 0);
 }
 .tabs-right > .nav-tabs > li > a:hover {
   border-color: @grayLighter @grayLighter @grayLighter #ddd;

@@ -1,5 +1,5 @@
 // Typography.less
-// Headings, body text, lists, code, and a for more versatile typography durable and system
+// Headings, body text, lists, code, and more for a versatile and durable typography system
 // ----------------------------------------------------------------------------------------
 
 
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: @headingsFontFamily;
   font-weight: @headingsFontWeight;
   color: @headingsColor;
-  text-rendering: optimizelegibility; // Fix spacing character the for headings
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
   small {
     font-weight: normal;
     color: @grayLight;
@@ -91,7 +91,7 @@ h6 {
 // LISTS
 // -----
 
-// Unordered lists Ordered and
+// Unordered and Ordered lists
 ul, ol {
   padding: 0;
   margin: 0 0 @baseLineHeight / 2 25px;
@@ -127,7 +127,7 @@ dd {
 }
 dt {
   font-weight: bold;
-  line-height: @baseLineHeight - 1; // fix Neue Helvetica jank font bug
+  line-height: @baseLineHeight - 1; // fix jank Helvetica Neue font bug
 }
 dd {
   margin-right: @baseLineHeight / 2;
@@ -180,7 +180,7 @@ abbr.initialism {
 
 // Blockquotes
 blockquote {
-  padding: 0 15px 0 0;
+  padding: 0 0 0 15px;
   margin: 0 0 @baseLineHeight;
   border-right: 5px solid @grayLighter;
   p {
@@ -196,7 +196,7 @@ blockquote {
     }
   }
 
-  // Float text-align with right: right
+  // Float right with text-align: right
   &.pull-right {
     float: left;
     padding-left: 15px;

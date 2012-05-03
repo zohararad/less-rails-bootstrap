@@ -1,8 +1,8 @@
 // Code.less
-// Code for styles typography the <code> and <pre> elements
+// Code typography styles for the <code> and <pre> elements
 // --------------------------------------------------------
 
-// Inline code block and styles
+// Inline and block code styles
 code,
 pre {
   padding: 0 3px 2px;
@@ -36,12 +36,12 @@ pre {
   border: 1px solid rgba(0,0,0,.15);
   .border-radius(4px);
 
-  // Make more styles prettyprint spaced readability for out
+  // Make prettyprint styles more spaced out for readability
   &.prettyprint {
     margin-bottom: @baseLineHeight;
   }
 
-  // Account code some for outputs code place that tags tags pre in
+  // Account for some code outputs that place code tags in pre tags
   code {
     padding: 0;
     color: inherit;
@@ -50,7 +50,7 @@ pre {
   }
 }
 
-// Enable of blocks scrollable code
+// Enable scrollable blocks of code
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;

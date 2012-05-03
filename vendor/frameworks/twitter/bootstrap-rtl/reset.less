@@ -2,7 +2,7 @@
 // Adapted from Normalize.css http://github.com/necolas/normalize.css
 // ------------------------------------------------------------------------
 
-// Display and IE6-9 in FF3
+// Display in IE6-9 and FF3
 // -------------------------
 
 article,
@@ -18,7 +18,7 @@ section {
   display: block;
 }
 
-// Display IE6-9 in block and FF3
+// Display block in IE6-9 and FF3
 // -------------------------
 
 audio,
@@ -29,7 +29,7 @@ video {
   *zoom: 1;
 }
 
-// Prevents from browsers modern displaying 'audio' without controls
+// Prevents modern browsers from displaying 'audio' without controls
 // -------------------------
 
 audio:not([controls]) {
@@ -54,7 +54,7 @@ a:active {
   outline: 0;
 }
 
-// Prevents sup and sub affecting all in line-height browsers
+// Prevents sub and sup affecting line-height in all browsers
 // -------------------------
 
 sub,
@@ -71,11 +71,11 @@ sub {
   bottom: -0.25em;
 }
 
-// Img a in border's quality image and
+// Img border in a's and image quality
 // -------------------------
 
 img {
-  max-width: 100%; // Make responsive inherently images
+  max-width: 100%; // Make images inherently responsive
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -84,7 +84,7 @@ img {
 // Forms
 // -------------------------
 
-// Font all in size browsers, margin changes, misc consistency
+// Font size in all browsers, margin changes, misc consistency
 button,
 input,
 select,
@@ -95,11 +95,11 @@ textarea {
 }
 button,
 input {
-  *overflow: visible; // Inner IE6 ie spacing/7
-  line-height: normal; // FF3/4 have !important in line-height on UA stylesheet
+  *overflow: visible; // Inner spacing ie IE6/7
+  line-height: normal; // FF3/4 have !important on line-height in UA stylesheet
 }
 button::-moz-focus-inner,
-input::-moz-focus-inner { // Inner border and padding oddities in FF3/4
+input::-moz-focus-inner { // Inner padding and border oddities in FF3/4
   padding: 0;
   border: 0;
 }
@@ -107,8 +107,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  cursor: pointer; // Cursors buttons all on applied consistently
-  -webkit-appearance: button; // Style in inputs clickable iOS
+  cursor: pointer; // Cursors on all buttons applied consistently
+  -webkit-appearance: button; // Style clickable inputs in iOS
 }
 input[type="search"] { // Appearance in Safari/Chrome
   -webkit-box-sizing: content-box;
@@ -118,9 +118,9 @@ input[type="search"] { // Appearance in Safari/Chrome
 }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none; // Inner-padding Chrome in issues OSX, Safari 5
+  -webkit-appearance: none; // Inner-padding issues in Chrome OSX, Safari 5
 }
 textarea {
-  overflow: auto; // Remove in scrollbar vertical IE6-9
-  vertical-align: top; // Readability cross-browser alignment and
+  overflow: auto; // Remove vertical scrollbar in IE6-9
+  vertical-align: top; // Readability and alignment cross-browser
 }
